@@ -334,3 +334,13 @@ hr {
 .text-muted { color: var(--color-muted); }
 .text-success { color: var(--color-success); }
 .text-danger { color: var(--color-danger); }
+
+/* Color
+   ========================================================================== */
+
+.bg-ink { background-color: var(--color-ink); }
+.bg-paper { background-color: var(--color-paper); }
+.bg-accent { background-color: var(--color-accent); }
+.bg-muted { background-color: var(--color-muted); }
+.bg-success { background-color: var(--color-success); }
+.bg-danger { background-color: var(--color-danger); }
