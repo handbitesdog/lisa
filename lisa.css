@@ -303,3 +303,34 @@ hr {
 .gap-y-32 { row-gap: var(--space-32); }
 .gap-y-40 { row-gap: var(--space-40); }
 .gap-y-80 { row-gap: var(--space-80); }
+
+/* Typography
+   ========================================================================== */
+
+.text-xs { font-size: var(--font-size-xs); }
+.text-sm { font-size: var(--font-size-sm); }
+.text-base { font-size: var(--font-size-base); }
+.text-lg { font-size: var(--font-size-lg); }
+.text-xl { font-size: var(--font-size-xl); }
+.text-2xl { font-size: var(--font-size-2xl); }
+.text-3xl { font-size: var(--font-size-3xl); }
+
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+
+.leading-tight { line-height: var(--leading-tight); }
+.leading-normal { line-height: var(--leading-normal); }
+.leading-loose { line-height: var(--leading-loose); }
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+.text-ink { color: var(--color-ink); }
+.text-paper { color: var(--color-paper); }
+.text-accent { color: var(--color-accent); }
+.text-muted { color: var(--color-muted); }
+.text-success { color: var(--color-success); }
+.text-danger { color: var(--color-danger); }
