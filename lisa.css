@@ -17,11 +17,11 @@
   /* color */
   --color-ink: #1a1a1a;
   --color-paper: #faf9f6;
-  --color-accent: #3457d5;
+  --color-blue: #3457d5;
   --color-muted: #6e6a64;
   --color-border: #e2ded6;
-  --color-success: #2f8f4e;
-  --color-danger: #c1443a;
+  --color-green: #2f8f4e;
+  --color-red: #c1443a;
 
   /* typography */
   --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -330,20 +330,20 @@ hr {
 
 .text-ink { color: var(--color-ink); }
 .text-paper { color: var(--color-paper); }
-.text-accent { color: var(--color-accent); }
+.text-blue { color: var(--color-blue); }
 .text-muted { color: var(--color-muted); }
-.text-success { color: var(--color-success); }
-.text-danger { color: var(--color-danger); }
+.text-green { color: var(--color-green); }
+.text-red { color: var(--color-red); }
 
 /* Color
    ========================================================================== */
 
 .bg-ink { background-color: var(--color-ink); }
 .bg-paper { background-color: var(--color-paper); }
-.bg-accent { background-color: var(--color-accent); }
+.bg-blue { background-color: var(--color-blue); }
 .bg-muted { background-color: var(--color-muted); }
-.bg-success { background-color: var(--color-success); }
-.bg-danger { background-color: var(--color-danger); }
+.bg-green { background-color: var(--color-green); }
+.bg-red { background-color: var(--color-red); }
 
 /* Borders
    ========================================================================== */
@@ -358,10 +358,10 @@ hr {
 .border-l { border-left: 1px solid var(--color-border); }
 
 .border-ink { border-color: var(--color-ink); }
-.border-accent { border-color: var(--color-accent); }
+.border-blue { border-color: var(--color-blue); }
 .border-muted { border-color: var(--color-muted); }
-.border-success { border-color: var(--color-success); }
-.border-danger { border-color: var(--color-danger); }
+.border-green { border-color: var(--color-green); }
+.border-red { border-color: var(--color-red); }
 
 .rounded-4 { border-radius: var(--radius-4); }
 .rounded-8 { border-radius: var(--radius-8); }
