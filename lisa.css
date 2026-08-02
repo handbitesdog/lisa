@@ -77,7 +77,7 @@ dd {
   margin: 0;
 }
 
-/* Headings inherit surrounding text until a text-*/font-* utility is applied. */
+/* Headings inherit surrounding text until a text- or font- utility is applied. */
 h1,
 h2,
 h3,
