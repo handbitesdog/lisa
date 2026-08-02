@@ -22,6 +22,9 @@
   --color-border: #e2ded6;
   --color-green: #2f8f4e;
   --color-red: #c1443a;
+  --color-blue-light: color-mix(in oklch, var(--color-blue) 20%, white);
+  --color-green-light: color-mix(in oklch, var(--color-green) 20%, white);
+  --color-red-light: color-mix(in oklch, var(--color-red) 20%, white);
 
   /* typography */
   --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -344,6 +347,10 @@ hr {
 .bg-muted { background-color: var(--color-muted); }
 .bg-green { background-color: var(--color-green); }
 .bg-red { background-color: var(--color-red); }
+
+.bg-blue-light { background-color: var(--color-blue-light); }
+.bg-green-light { background-color: var(--color-green-light); }
+.bg-red-light { background-color: var(--color-red-light); }
 
 /* Borders
    ========================================================================== */
