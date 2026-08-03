@@ -85,6 +85,8 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   line-height: var(--leading-normal);
+  background-color: var(--color-bg);
+  color: var(--color-text);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -131,7 +133,7 @@ svg {
 }
 
 a {
-  color: inherit;
+  color: var(--color-link);
   text-decoration: none;
 }
 
