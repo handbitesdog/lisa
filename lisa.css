@@ -43,9 +43,13 @@
   --color-orange-dark: color-mix(in oklch, var(--color-orange) 70%, black);
 
   --color-border: var(--color-white-dark);
+  --color-bg: var(--color-white);
+  --color-text: var(--color-black);
+  --color-link: var(--color-blue);
 
   /* typography */
   --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-size-xs: 12px;
   --font-size-sm: 14px;
   --font-size-base: 16px;
@@ -412,3 +416,14 @@ hr {
 .rounded-8 { border-radius: var(--radius-8); }
 .rounded-16 { border-radius: var(--radius-16); }
 .rounded-full { border-radius: 9999px; }
+
+/* Theme
+   ========================================================================== */
+
+.font-serif { font-family: var(--font-serif); }
+.font-sans { font-family: var(--font-sans); }
+
+.text-body { color: var(--color-text); }
+.text-link { color: var(--color-link); }
+
+.bg-body { background-color: var(--color-bg); }
