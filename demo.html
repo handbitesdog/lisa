@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="lisa.css" />
 </head>
 <body>
+  <div class="container bg-light-gray py-32">
+    <h1>Container</h1>
+    <p>
+      This block uses <code>.container</code>: max-width 1200px, centered,
+      with padding on viewports narrower than that.
+    </p>
+  </div>
+
   <div class="mx-auto p-32 flex flex-col gap-32" style="max-width: 800px;">
     <h1>Normalizer check</h1>
 
@@ -44,6 +52,18 @@
     </table>
 
     <hr />
+
+    <h1>Theme</h1>
+
+    <div class="bg-body border p-16">
+      <p class="text-body">text-body paragraph</p>
+      <a href="#" class="text-link">text-link anchor</a>
+    </div>
+
+    <div class="flex gap-16">
+      <p class="font-sans">font-sans</p>
+      <p class="font-serif">font-serif</p>
+    </div>
 
     <h1>Layout</h1>
 
@@ -184,18 +204,6 @@
       <div class="border rounded-8 p-16">rounded-8</div>
       <div class="border rounded-16 p-16">rounded-16</div>
       <div class="border rounded-full p-16">rounded-full</div>
-    </div>
-
-    <h1>Theme</h1>
-
-    <div class="bg-body border p-16">
-      <p class="text-body">text-body paragraph</p>
-      <a href="#" class="text-link">text-link anchor</a>
-    </div>
-
-    <div class="flex gap-16">
-      <p class="font-sans">font-sans</p>
-      <p class="font-serif">font-serif</p>
     </div>
   </div>
 </body>
