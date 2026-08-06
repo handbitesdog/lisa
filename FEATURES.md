@@ -108,6 +108,6 @@ auto-derived light/dark variants (each shade, where present, is its own named co
   the host element's CSS `color`) — the native arrow's spacing isn't consistently controllable
   across browsers via padding, but the custom one is drawn with a guaranteed 16px gap
   (`background-position: right var(--space-16) center`) on both sides via
-  `padding-right: var(--space-40)`.
+  `padding-right: calc(var(--space-40) + var(--space-8))`.
 - Focus: `.btn:focus-visible`, `.input:focus-visible`, `.select:focus-visible` get a 2px blue
   outline with a 2px offset. A work in progress; more input styling is planned.
