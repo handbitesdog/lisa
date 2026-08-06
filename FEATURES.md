@@ -6,7 +6,7 @@ A single-file normalizer + utility class system.
 
 - `box-sizing: border-box` on all elements.
 - Margin reset on headings, `p`, `figure`, `blockquote`, `dl`, `dd`.
-- Headings inherit font size/weight until a `.text-*`/`.font-*` utility is applied.
+- Headings inherit font size/weight until a `.text-*`/`.font-*` utility is applied, but default to `--leading-tight` line-height.
 - Lists (`ul`, `ol`) unstyled, no margin/padding.
 - Media elements (`img`, `picture`, `video`, `canvas`, `svg`) are block-level and capped at `max-width: 100%`.
 - Links use `--color-link`, fade to `--color-link-dark` on hover.
