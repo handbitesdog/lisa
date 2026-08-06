@@ -235,6 +235,53 @@
     </div>
 
     <h2 class="text-lg text-bold mb-16">Normalizer</h2>
+
+    <div class="mb-16">
+        <p class="text-sm text-dark-gray mb-8">a</p>
+        <p class="mb-16"><a href="#">A link, themed color, fades on hover</a></p>
+
+        <p class="text-sm text-dark-gray mb-8">ul</p>
+        <ul class="flex flex-col gap-8 mb-16">
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+        </ul>
+
+        <p class="text-sm text-dark-gray mb-8">button</p>
+        <button type="button" class="mb-16">A button</button>
+
+        <p class="text-sm text-dark-gray mb-8">table</p>
+        <table class="mb-16">
+          <tbody>
+            <tr>
+              <td class="border p-8">Row 1, A</td>
+              <td class="border p-8">Row 1, B</td>
+            </tr>
+            <tr>
+              <td class="border p-8">Row 2, A</td>
+              <td class="border p-8">Row 2, B</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="text-sm text-dark-gray mb-8">hr</p>
+        <hr class="mb-16" />
+
+        <p class="text-sm text-dark-gray mb-8">input (text vs. checkbox/radio)</p>
+        <div class="flex items-center gap-16 mb-16">
+          <input type="search" placeholder="Search" class="border rounded-8 p-8" />
+          <input type="checkbox" />
+          <input type="radio" />
+        </div>
+
+        <p class="text-sm text-dark-gray mb-8">img (height: auto keeps aspect ratio)</p>
+        <div style="width: 160px;">
+          <svg width="480" height="160" viewBox="0 0 480 160" xmlns="http://www.w3.org/2000/svg">
+            <rect width="480" height="160" style="fill: var(--color-pale-blue);"></rect>
+            <rect x="2" y="2" width="476" height="156" style="fill: none; stroke: var(--color-blue); stroke-width: 4;"></rect>
+          </svg>
+        </div>
+    </div>
   </div>
 
   <script>
