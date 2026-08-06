@@ -95,4 +95,8 @@ auto-derived light/dark variants (each shade, where present, is its own named co
   `cursor: not-allowed`, and `pointer-events: none` (which also keeps `:hover` from ever
   matching, so it's inert on both filled and unfilled buttons). Declared after the utility
   sections — the opposite placement from `.btn` — so it overrides whatever color is composed
-  in. A work in progress; more input/button styling is planned.
+  in.
+- `.input` — same `--space-8`/`--space-16` padding, `--radius-8` corners, and 1px light-gray
+  border as `.btn`, for text-like inputs. Declared alongside `.btn` (before the utility
+  sections) so it can be overridden the same way. A work in progress; more input styling
+  (focus state, `<select>`, etc.) is planned.
