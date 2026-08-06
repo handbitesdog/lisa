@@ -90,4 +90,13 @@ auto-derived light/dark variants (each shade, where present, is its own named co
   darkens without dragging the text down with it. Compose like `.btn .btn-filled .bg-blue`.
 - `.btn-unfilled` — on hover, `filter: brightness(0.92)` applies to the whole button, darkening
   border and text together since both are drawn directly on it. Compose like
-  `.btn .btn-unfilled .border-blue`. A work in progress; more input/button styling is planned.
+  `.btn .btn-unfilled .border-blue`.
+- `.btn-disabled` — forces a flat light-gray/dark-gray look regardless of composed color,
+  `cursor: not-allowed`, and `pointer-events: none` (which also keeps `:hover` from ever
+  matching, so it's inert on both filled and unfilled buttons). Declared after the utility
+  sections — the opposite placement from `.btn` — so it overrides whatever color is composed
+  in.
+- `.input` — same `--space-8`/`--space-16` padding, `--radius-8` corners, and 1px light-gray
+  border as `.btn`, for text-like inputs. Declared alongside `.btn` (before the utility
+  sections) so it can be overridden the same way. A work in progress; more input styling
+  (focus state, `<select>`, etc.) is planned.
