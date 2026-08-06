@@ -24,7 +24,8 @@
   --space-80: 80px;
 
   /* layout */
-  --container-max: 1200px;
+  --wide-container-max: 1200px;
+  --container-max: 840px;
 
   /* color */
   --color-black: #1a1a1a;
@@ -198,6 +199,16 @@ hr {
   width: 100%;
   max-width: var(--container-max);
   margin-inline: auto;
+  padding-left: var(--space-32);
+  padding-right: var(--space-32);
+}
+
+.wide-container {
+  width: 100%;
+  max-width: var(--wide-container-max);
+  margin-inline: auto;
+  padding-left: var(--space-32);
+  padding-right: var(--space-32);
 }
 
 /* Custom properties can't be read inside a media feature, so this breakpoint
