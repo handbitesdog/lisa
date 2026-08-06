@@ -99,8 +99,12 @@ auto-derived light/dark variants (each shade, where present, is its own named co
   it overrides whatever color is composed in.
 - `.input` — same `--space-8`/`--space-16` padding, `--radius-8` corners, and 1px light-gray
   border as `.btn`, for text-like inputs. Declared alongside `.btn` (before the utility
-  sections) so it can be overridden the same way.
-- `.select` — same padding/border/radius as `.input`. Unlike `.input`, `appearance` is left
-  native so the dropdown arrow stays visible — there's no custom arrow to replace it with.
+  sections) so it can be overridden the same way. `background-color: inherit` so it takes on
+  whatever background the parent has instead of a fixed color.
+- `.select` — same padding/border/radius as `.input`, and also inherits its background. Unlike
+  `.input`, the native arrow is dropped (`appearance: none`) in favor of a custom SVG chevron —
+  the native arrow's spacing isn't consistently controllable across browsers via padding, but
+  the custom one is drawn with a guaranteed 16px gap (`background-position: right
+  var(--space-16) center`) on both sides via `padding-right: var(--space-40)`.
 - Focus: `.btn:focus-visible`, `.input:focus-visible`, `.select:focus-visible` get a 2px blue
   outline with a 2px offset. A work in progress; more input styling is planned.
