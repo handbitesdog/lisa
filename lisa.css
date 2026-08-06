@@ -179,8 +179,9 @@ textarea {
 }
 
 /* Checkbox/radio are excluded since removing appearance drops their
-   native indicator with nothing to replace it. */
-input:not([type="checkbox"]):not([type="radio"]),
+   native indicator with nothing to replace it. :where() keeps this
+   selector's specificity at zero so .rounded-* utilities still win. */
+input:where(:not([type="checkbox"]):not([type="radio"])),
 textarea {
   appearance: none;
   border-radius: 0;
