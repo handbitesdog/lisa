@@ -257,14 +257,22 @@ hr {
   padding: var(--space-8) var(--space-16);
   border: 1px solid var(--color-light-gray);
   border-radius: var(--radius-8);
+  background-color: inherit;
 }
 
-/* appearance is left native (unlike .input) so the dropdown arrow
-   stays visible — there's no custom arrow to replace it with. */
+/* appearance: none drops the native arrow, so a custom chevron is
+   drawn instead — this also makes the spacing around it consistent
+   across browsers, unlike padding against the native arrow. */
 .select {
-  padding: var(--space-8) var(--space-16);
+  padding: var(--space-8) var(--space-40) var(--space-8) var(--space-16);
   border: 1px solid var(--color-light-gray);
   border-radius: var(--radius-8);
+  background-color: inherit;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%233e3b3e' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--space-16) center;
+  background-size: 12px;
 }
 
 .btn:focus-visible,
