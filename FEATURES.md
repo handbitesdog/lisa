@@ -47,18 +47,21 @@ All support `0` and the five scale values (e.g. `.p-0` … `.p-80`).
 - Weight: `.text-normal`, `.text-medium`, `.text-semibold`, `.text-bold`.
 - Line height: `.leading-tight`, `.leading-normal`, `.leading-loose`.
 - Align: `.text-left`, `.text-center`, `.text-right`.
-- Color: `.text-{black,dark-gray,gray,white,light-gray,blue,green,red,yellow,purple,orange}`.
+- Color: `.text-{black,dark-gray,gray,light-gray,white,dark-blue,blue,light-blue,pale-blue,dark-green,green,light-green,pale-green,dark-red,red,light-red,pale-red,dark-yellow,yellow,light-yellow,pale-yellow,dark-purple,purple,light-purple,pale-purple,dark-orange,orange,light-orange,pale-orange,dark-brown,brown,light-brown,cream}`.
 
 ## Color
 
-Palette: black, dark-gray, gray, white, light-gray, blue, green, red, yellow, purple, orange.
+Palette: black, dark-gray, gray, light-gray, white, dark-blue, blue, light-blue, pale-blue,
+dark-green, green, light-green, pale-green, dark-red, red, light-red, pale-red, dark-yellow,
+yellow, light-yellow, pale-yellow, dark-purple, purple, light-purple, pale-purple, dark-orange,
+orange, light-orange, pale-orange, dark-brown, brown, light-brown, cream — flat values, no
+auto-derived light/dark variants (each shade, where present, is its own named color).
 
-- Background: `.bg-{color}` for all eleven.
-- Light/dark variants (auto-derived via `color-mix`) for blue, green, red, yellow, purple, orange: `.bg-{color}-light`, `.bg-{color}-dark`.
+- Background: `.bg-{color}` for all thirty-three.
 
 ## Borders
 
 - `.border`, `.border-2`, `.border-0`.
 - Sides: `.border-t`, `.border-r`, `.border-b`, `.border-l`.
-- Color: `.border-{black,dark-gray,gray,blue,green,red,yellow,purple,orange}`.
+- Color: `.border-{black,dark-gray,gray,light-gray,white,dark-blue,blue,light-blue,pale-blue,dark-green,green,light-green,pale-green,dark-red,red,light-red,pale-red,dark-yellow,yellow,light-yellow,pale-yellow,dark-purple,purple,light-purple,pale-purple,dark-orange,orange,light-orange,pale-orange,dark-brown,brown,light-brown,cream}`.
 - Radius: `.rounded-4`, `.rounded-8`, `.rounded-16`, `.rounded-full`.
