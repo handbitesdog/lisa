@@ -6,15 +6,16 @@
   <title>lisa.css</title>
   <link rel="stylesheet" href="lisa.css" />
   <style>
-    /* Demo-only: lisa has no hover-variant system, so this swatch
-       tooltip is a one-off component rather than a utility class. */
-    .color-tooltip {
-      top: -36px;
+    /* Demo-only: lisa has no hover-variant system, so these swatch
+       tooltips are a one-off component rather than utility classes. */
+    .color-tooltip,
+    .copy-tooltip {
       left: 50%;
       transform: translateX(-50%);
       white-space: nowrap;
-      background-color: var(--color-black);
-      color: var(--color-white);
+      background-color: var(--color-white);
+      color: var(--color-black);
+      border: 1px solid var(--color-light-gray);
       font-size: var(--font-size-xs);
       padding: 4px 8px;
       border-radius: var(--radius-4);
@@ -22,7 +23,14 @@
       transition: opacity var(--fade-speed) ease;
     }
 
+    .color-tooltip { top: -36px; }
+    .copy-tooltip { top: -74px; }
+
     .color-swatch:hover + .color-tooltip {
+      opacity: 1;
+    }
+
+    .copy-tooltip.is-visible {
       opacity: 1;
     }
   </style>
@@ -61,134 +69,167 @@
       <div class="relative">
         <div class="rounded-8 border border-white bg-black cursor-pointer color-swatch" data-name="black" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">black</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-dark-gray cursor-pointer color-swatch" data-name="dark-gray" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">dark-gray</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-gray cursor-pointer color-swatch" data-name="gray" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">gray</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-light-gray cursor-pointer color-swatch" data-name="light-gray" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">light-gray</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-light-gray bg-white cursor-pointer color-swatch" data-name="white" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">white</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-dark-blue cursor-pointer color-swatch" data-name="dark-blue" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">dark-blue</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-blue cursor-pointer color-swatch" data-name="blue" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">blue</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-light-blue cursor-pointer color-swatch" data-name="light-blue" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">light-blue</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-pale-blue cursor-pointer color-swatch" data-name="pale-blue" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">pale-blue</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-dark-green cursor-pointer color-swatch" data-name="dark-green" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">dark-green</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-green cursor-pointer color-swatch" data-name="green" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">green</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-light-green cursor-pointer color-swatch" data-name="light-green" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">light-green</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-pale-green cursor-pointer color-swatch" data-name="pale-green" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">pale-green</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-dark-red cursor-pointer color-swatch" data-name="dark-red" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">dark-red</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-red cursor-pointer color-swatch" data-name="red" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">red</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-light-red cursor-pointer color-swatch" data-name="light-red" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">light-red</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-pale-red cursor-pointer color-swatch" data-name="pale-red" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">pale-red</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-dark-yellow cursor-pointer color-swatch" data-name="dark-yellow" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">dark-yellow</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-yellow cursor-pointer color-swatch" data-name="yellow" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">yellow</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-light-yellow cursor-pointer color-swatch" data-name="light-yellow" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">light-yellow</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-light-gray bg-pale-yellow cursor-pointer color-swatch" data-name="pale-yellow" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">pale-yellow</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-dark-purple cursor-pointer color-swatch" data-name="dark-purple" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">dark-purple</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-purple cursor-pointer color-swatch" data-name="purple" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">purple</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-light-purple cursor-pointer color-swatch" data-name="light-purple" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">light-purple</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-pale-purple cursor-pointer color-swatch" data-name="pale-purple" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">pale-purple</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-dark-orange cursor-pointer color-swatch" data-name="dark-orange" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">dark-orange</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-orange cursor-pointer color-swatch" data-name="orange" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">orange</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-light-orange cursor-pointer color-swatch" data-name="light-orange" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">light-orange</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-pale-orange cursor-pointer color-swatch" data-name="pale-orange" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">pale-orange</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-dark-brown cursor-pointer color-swatch" data-name="dark-brown" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">dark-brown</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-brown cursor-pointer color-swatch" data-name="brown" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">brown</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-light-brown cursor-pointer color-swatch" data-name="light-brown" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">light-brown</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
       <div class="relative">
         <div class="rounded-8 border border-white bg-cream cursor-pointer color-swatch" data-name="cream" style="width: 48px; height: 48px;"></div>
         <div class="absolute pointer-events-none color-tooltip">cream</div>
+        <div class="absolute pointer-events-none copy-tooltip">Copied!</div>
       </div>
     </div>
 
@@ -204,15 +245,14 @@
     }
 
     document.querySelectorAll('.color-swatch').forEach(function (swatch) {
-      var tooltip = swatch.nextElementSibling;
-      var name = tooltip.textContent;
+      var copyTooltip = swatch.nextElementSibling.nextElementSibling;
 
       swatch.addEventListener('click', function () {
         var hex = rgbToHex(getComputedStyle(swatch).backgroundColor);
-        navigator.clipboard.writeText(hex);
-        tooltip.textContent = 'Copied ' + hex;
+        navigator.clipboard.writeText(hex).catch(function () {});
+        copyTooltip.classList.add('is-visible');
         setTimeout(function () {
-          tooltip.textContent = name;
+          copyTooltip.classList.remove('is-visible');
         }, 1000);
       });
     });
