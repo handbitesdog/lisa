@@ -102,9 +102,12 @@ auto-derived light/dark variants (each shade, where present, is its own named co
   sections) so it can be overridden the same way. `background-color: inherit` so it takes on
   whatever background the parent has instead of a fixed color.
 - `.select` — same padding/border/radius as `.input`, and also inherits its background. Unlike
-  `.input`, the native arrow is dropped (`appearance: none`) in favor of a custom SVG chevron —
-  the native arrow's spacing isn't consistently controllable across browsers via padding, but
-  the custom one is drawn with a guaranteed 16px gap (`background-position: right
-  var(--space-16) center`) on both sides via `padding-right: var(--space-40)`.
+  `.input`, the native arrow is dropped (`appearance: none`) in favor of a Lucide
+  `chevron-down` icon inlined as a data-URI background-image (`stroke` is a literal
+  `--color-dark-gray` value, not `currentColor`, since a background-image SVG doesn't inherit
+  the host element's CSS `color`) — the native arrow's spacing isn't consistently controllable
+  across browsers via padding, but the custom one is drawn with a guaranteed 16px gap
+  (`background-position: right var(--space-16) center`) on both sides via
+  `padding-right: var(--space-40)`.
 - Focus: `.btn:focus-visible`, `.input:focus-visible`, `.select:focus-visible` get a 2px blue
   outline with a 2px offset. A work in progress; more input styling is planned.
