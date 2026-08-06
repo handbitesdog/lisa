@@ -246,7 +246,7 @@ hr {
 .btn-filled::before {
   content: "";
   position: absolute;
-  inset: -1px;
+  inset: calc(-1 * var(--border-width));
   z-index: -1;
   background-color: inherit;
   border-radius: inherit;
