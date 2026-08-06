@@ -14,7 +14,9 @@ A single-file normalizer + utility class system.
 - Form controls inherit font/color; buttons are reset (no background/border/padding, `cursor: pointer`).
 - Text inputs and `textarea` have native appearance/border-radius removed (checkbox and radio
   are left native since they'd otherwise lose their indicator, but get `accent-color:
-  var(--color-blue)` so their checked state matches the theme instead of browser default blue).
+  var(--color-blue)` so their checked state matches the theme instead of browser default blue,
+  plus `background-color: inherit` and a `--border-width` `--color-border` border so the
+  unchecked box matches the surrounding theme instead of the browser default).
 - `textarea` resizes vertically only.
 - Tables collapse borders; `hr` uses `--color-border`.
 
