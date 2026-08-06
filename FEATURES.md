@@ -101,7 +101,11 @@ auto-derived light/dark variants (each shade, where present, is its own named co
 - `.input` — same `--space-8`/`--space-16` padding, `--radius-8` corners, and 1px light-gray
   border as `.btn`, for text-like inputs and `textarea`. Declared alongside `.btn` (before the
   utility sections) so it can be overridden the same way. `background-color: inherit` so it
-  takes on whatever background the parent has instead of a fixed color.
+  takes on whatever background the parent has instead of a fixed color. On `textarea`, the
+  resize-handle glyph is replaced with a Lucide `chevrons-up-down` icon via
+  `::-webkit-resizer` (WebKit/Blink only — Chrome, Safari, Edge; Firefox has no equivalent
+  hook and keeps its native grip), sized up to `--space-16` with the icon at `10px` so it
+  doesn't sit flush in the corner.
 - `.select` — same padding/border/radius as `.input`, and also inherits its background. Unlike
   `.input`, the native arrow is dropped (`appearance: none`) in favor of a Lucide
   `chevron-down` icon inlined as a data-URI background-image (`stroke` is a literal
