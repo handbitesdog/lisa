@@ -259,6 +259,21 @@ hr {
   border-radius: var(--radius-8);
 }
 
+/* appearance is left native (unlike .input) so the dropdown arrow
+   stays visible — there's no custom arrow to replace it with. */
+.select {
+  padding: var(--space-8) var(--space-16);
+  border: 1px solid var(--color-light-gray);
+  border-radius: var(--radius-8);
+}
+
+.btn:focus-visible,
+.input:focus-visible,
+.select:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 2px;
+}
+
 /* Layout
    ========================================================================== */
 
@@ -626,9 +641,16 @@ hr {
    pointer-events: none also keeps :hover from ever matching, so the
    btn-filled/btn-unfilled hover rules never apply here. */
 .btn-disabled {
-  background-color: var(--color-light-gray);
   border-color: var(--color-light-gray);
   color: var(--color-dark-gray);
   cursor: not-allowed;
   pointer-events: none;
+}
+
+.btn-filled.btn-disabled {
+  background-color: var(--color-light-gray);
+}
+
+.btn-unfilled.btn-disabled {
+  background-color: var(--color-white);
 }

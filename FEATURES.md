@@ -91,12 +91,16 @@ auto-derived light/dark variants (each shade, where present, is its own named co
 - `.btn-unfilled` — on hover, `filter: brightness(0.92)` applies to the whole button, darkening
   border and text together since both are drawn directly on it. Compose like
   `.btn .btn-unfilled .border-blue`.
-- `.btn-disabled` — forces a flat light-gray/dark-gray look regardless of composed color,
-  `cursor: not-allowed`, and `pointer-events: none` (which also keeps `:hover` from ever
-  matching, so it's inert on both filled and unfilled buttons). Declared after the utility
-  sections — the opposite placement from `.btn` — so it overrides whatever color is composed
-  in.
+- `.btn-disabled` — `cursor: not-allowed` and `pointer-events: none` (which also keeps
+  `:hover` from ever matching, so it's inert on both filled and unfilled buttons), plus a
+  light-gray border and dark-gray text regardless of composed color. Background is
+  variant-specific: `.btn-filled.btn-disabled` gets a light-gray fill, `.btn-unfilled.btn-disabled`
+  stays white. Declared after the utility sections — the opposite placement from `.btn` — so
+  it overrides whatever color is composed in.
 - `.input` — same `--space-8`/`--space-16` padding, `--radius-8` corners, and 1px light-gray
   border as `.btn`, for text-like inputs. Declared alongside `.btn` (before the utility
-  sections) so it can be overridden the same way. A work in progress; more input styling
-  (focus state, `<select>`, etc.) is planned.
+  sections) so it can be overridden the same way.
+- `.select` — same padding/border/radius as `.input`. Unlike `.input`, `appearance` is left
+  native so the dropdown arrow stays visible — there's no custom arrow to replace it with.
+- Focus: `.btn:focus-visible`, `.input:focus-visible`, `.select:focus-visible` get a 2px blue
+  outline with a 2px offset. A work in progress; more input styling is planned.
