@@ -187,6 +187,13 @@ textarea {
   border-radius: 0;
 }
 
+/* Native indicator stays; just theme its checked-state color instead
+   of leaving it browser blue. */
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--color-blue);
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
