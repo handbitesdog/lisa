@@ -541,8 +541,17 @@ hr {
 .rounded-16 { border-radius: var(--radius-16); }
 .rounded-full { border-radius: 9999px; }
 
+/* Position
+   ========================================================================== */
+
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+
 /* Interactivity
    ========================================================================== */
+
+.pointer-events-none { pointer-events: none; }
 
 .cursor-auto { cursor: auto; }
 .cursor-default { cursor: default; }
