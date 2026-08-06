@@ -267,6 +267,19 @@ hr {
   background-color: inherit;
 }
 
+/* ::-webkit-resizer is WebKit/Blink-only (Chrome, Safari, Edge) —
+   Firefox has no equivalent hook, so its native grip still shows
+   there. Sizing the box up and the icon down inside it leaves space
+   around the icon instead of it sitting flush in the corner. */
+.input::-webkit-resizer {
+  width: var(--space-16);
+  height: var(--space-16);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233e3b3e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m7 15 5 5 5-5'/%3E%3Cpath d='m7 9 5-5 5 5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+}
+
 /* appearance: none drops the native arrow, so a custom chevron is
    drawn instead — this also makes the spacing around it consistent
    across browsers, unlike padding against the native arrow. */
