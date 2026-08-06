@@ -19,6 +19,10 @@ The following spacing units are used:
 - Use short and descriptive rules names.
 - Avoid excessively long rules.
 
+# Workflow
+
+- Always update FEATURES.md 
+
 # Git conventions
 
 - Do all work on a branch off `main` and merge it back; don't commit changes
