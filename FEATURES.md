@@ -8,9 +8,12 @@ A single-file normalizer + utility class system.
 - Margin reset on headings, `p`, `figure`, `blockquote`, `dl`, `dd`.
 - Headings inherit font size/weight until a `.text-*`/`.font-*` utility is applied, but default to `--leading-tight` line-height.
 - Lists (`ul`, `ol`) unstyled, no margin/padding.
-- Media elements (`img`, `picture`, `video`, `canvas`, `svg`) are block-level and capped at `max-width: 100%`.
+- Media elements (`img`, `picture`, `video`, `canvas`, `svg`) are block-level, capped at
+  `max-width: 100%`, with `height: auto` to preserve aspect ratio.
 - Links use `--color-link`, fade to `--color-link-dark` on hover.
 - Form controls inherit font/color; buttons are reset (no background/border/padding, `cursor: pointer`).
+- Text inputs and `textarea` have native appearance/border-radius removed (checkbox and radio
+  are left native since they'd otherwise lose their indicator).
 - `textarea` resizes vertically only.
 - Tables collapse borders; `hr` uses `--color-border`.
 
