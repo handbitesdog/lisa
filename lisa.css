@@ -30,6 +30,7 @@
   /* color */
   --color-black: #1a1a1a;
   --color-dark-gray: #6e6a64;
+  --color-gray: #a8a49d;
   --color-white: #faf9f6;
   --color-light-gray: #e2ded6;
   --color-blue: #3457d5;
@@ -404,6 +405,7 @@ hr {
 
 .text-black { color: var(--color-black); }
 .text-dark-gray { color: var(--color-dark-gray); }
+.text-gray { color: var(--color-gray); }
 .text-white { color: var(--color-white); }
 .text-light-gray { color: var(--color-light-gray); }
 .text-blue { color: var(--color-blue); }
@@ -418,6 +420,7 @@ hr {
 
 .bg-black { background-color: var(--color-black); }
 .bg-dark-gray { background-color: var(--color-dark-gray); }
+.bg-gray { background-color: var(--color-gray); }
 .bg-white { background-color: var(--color-white); }
 .bg-light-gray { background-color: var(--color-light-gray); }
 .bg-blue { background-color: var(--color-blue); }
@@ -454,6 +457,7 @@ hr {
 
 .border-black { border-color: var(--color-black); }
 .border-dark-gray { border-color: var(--color-dark-gray); }
+.border-gray { border-color: var(--color-gray); }
 .border-blue { border-color: var(--color-blue); }
 .border-green { border-color: var(--color-green); }
 .border-red { border-color: var(--color-red); }
