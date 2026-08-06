@@ -68,3 +68,7 @@ auto-derived light/dark variants (each shade, where present, is its own named co
 - Sides: `.border-t`, `.border-r`, `.border-b`, `.border-l`.
 - Color: `.border-{black,dark-gray,gray,light-gray,white,dark-blue,blue,light-blue,pale-blue,dark-green,green,light-green,pale-green,dark-red,red,light-red,pale-red,dark-yellow,yellow,light-yellow,pale-yellow,dark-purple,purple,light-purple,pale-purple,dark-orange,orange,light-orange,pale-orange,dark-brown,brown,light-brown,cream}`.
 - Radius: `.rounded-4`, `.rounded-8`, `.rounded-16`, `.rounded-full`.
+
+## Interactivity
+
+- Cursor: `.cursor-{auto,default,pointer,text,move,grab,grabbing,wait,help,not-allowed,crosshair,zoom-in,zoom-out,none}`.

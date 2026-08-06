@@ -540,3 +540,21 @@ hr {
 .rounded-8 { border-radius: var(--radius-8); }
 .rounded-16 { border-radius: var(--radius-16); }
 .rounded-full { border-radius: 9999px; }
+
+/* Interactivity
+   ========================================================================== */
+
+.cursor-auto { cursor: auto; }
+.cursor-default { cursor: default; }
+.cursor-pointer { cursor: pointer; }
+.cursor-text { cursor: text; }
+.cursor-move { cursor: move; }
+.cursor-grab { cursor: grab; }
+.cursor-grabbing { cursor: grabbing; }
+.cursor-wait { cursor: wait; }
+.cursor-help { cursor: help; }
+.cursor-not-allowed { cursor: not-allowed; }
+.cursor-crosshair { cursor: crosshair; }
+.cursor-zoom-in { cursor: zoom-in; }
+.cursor-zoom-out { cursor: zoom-out; }
+.cursor-none { cursor: none; }
