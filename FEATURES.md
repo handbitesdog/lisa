@@ -80,9 +80,14 @@ auto-derived light/dark variants (each shade, where present, is its own named co
 
 ## Components
 
-- `.btn` — `--space-8` padding, 1px light-gray border. Declared before the utility sections so
-  `.bg-*`/`.border-*`/`.p-*` etc. can still override it by source order.
-- `.btn-filled`, `.btn-unfilled` — on hover, darkens whatever `.bg-*`/`.border-*` color is
-  composed in via `filter: brightness(0.92)`, since that works regardless of which specific
-  color utility is applied. Compose like `.btn .btn-filled .bg-blue` or
+- `.btn` — `--space-8`/`--space-16` padding, `--radius-8` corners, 1px light-gray border.
+  Declared before the utility sections so `.bg-*`/`.border-*`/`.p-*` etc. can still override it
+  by source order.
+- `.btn-filled` — the fill lives on a `::before` layer (inherits `background-color` and
+  `border-radius` from the button) that sits above the button's own background but below its
+  text, and covers the border strip too so the border reads as the same color as the fill
+  instead of light-gray. On hover, only that layer gets `filter: brightness(0.92)`, so the fill
+  darkens without dragging the text down with it. Compose like `.btn .btn-filled .bg-blue`.
+- `.btn-unfilled` — on hover, `filter: brightness(0.92)` applies to the whole button, darkening
+  border and text together since both are drawn directly on it. Compose like
   `.btn .btn-unfilled .border-blue`. A work in progress; more input/button styling is planned.
