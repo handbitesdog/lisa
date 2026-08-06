@@ -65,7 +65,9 @@ auto-derived light/dark variants (each shade, where present, is its own named co
 
 ## Borders
 
-- `.border-thin` (1px), `.border` (2px), `.border-thick` (4px), `.border-0`.
+- `.border-thin` (1px), `.border` (`--border-width`, 2px), `.border-thick` (4px), `.border-0`.
+  `--border-width` also drives the default border on `.btn`, `.input`, and `.select`, so
+  overriding it changes both the utility and those components together.
 - Style: `.border-solid`, `.border-dashed`, `.border-dotted`.
 - Sides: `.border-t`, `.border-r`, `.border-b`, `.border-l`, `.border-x`, `.border-y`.
 - Color: `.border-{black,dark-gray,gray,light-gray,white,dark-blue,blue,light-blue,pale-blue,dark-green,green,light-green,pale-green,dark-red,red,light-red,pale-red,dark-yellow,yellow,light-yellow,pale-yellow,dark-purple,purple,light-purple,pale-purple,dark-orange,orange,light-orange,pale-orange,dark-brown,brown,light-brown,cream}`.
@@ -82,7 +84,8 @@ auto-derived light/dark variants (each shade, where present, is its own named co
 
 ## Components
 
-- `.btn` — `--space-8`/`--space-16` padding, `--radius-8` corners, 1px light-gray border.
+- `.btn` — `--space-8`/`--space-16` padding, `--radius-8` corners, `--border-width` light-gray
+  border.
   Declared before the utility sections so `.bg-*`/`.border-*`/`.p-*` etc. can still override it
   by source order.
 - `.btn-filled` — the fill lives on a `::before` layer (inherits `background-color` and
@@ -99,8 +102,8 @@ auto-derived light/dark variants (each shade, where present, is its own named co
   variant-specific: `.btn-filled.btn-disabled` gets a light-gray fill, `.btn-unfilled.btn-disabled`
   stays white. Declared after the utility sections — the opposite placement from `.btn` — so
   it overrides whatever color is composed in.
-- `.input` — same `--space-8`/`--space-16` padding, `--radius-8` corners, and 1px light-gray
-  border as `.btn`, for text-like inputs and `textarea`. Declared alongside `.btn` (before the
+- `.input` — same `--space-8`/`--space-16` padding, `--radius-8` corners, and `--border-width`
+  light-gray border as `.btn`, for text-like inputs and `textarea`. Declared alongside `.btn` (before the
   utility sections) so it can be overridden the same way. `background-color: inherit` so it
   takes on whatever background the parent has instead of a fixed color. On `textarea`, the
   resize-handle glyph is replaced with a Lucide `chevrons-up-down` icon via

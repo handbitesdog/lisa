@@ -80,6 +80,9 @@
   --radius-4: 4px;
   --radius-8: 8px;
   --radius-16: 16px;
+
+  /* border */
+  --border-width: 2px;
 }
 
 /* Normalizer
@@ -225,7 +228,7 @@ hr {
    these defaults by source order alone. */
 .btn {
   padding: var(--space-8) var(--space-16);
-  border: 1px solid var(--color-light-gray);
+  border: var(--border-width) solid var(--color-light-gray);
   border-radius: var(--radius-8);
   transition: filter var(--fade-speed) ease;
 }
@@ -262,7 +265,7 @@ hr {
 
 .input {
   padding: var(--space-8) var(--space-16);
-  border: 1px solid var(--color-light-gray);
+  border: var(--border-width) solid var(--color-light-gray);
   border-radius: var(--radius-8);
   background-color: inherit;
 }
@@ -285,7 +288,7 @@ hr {
    across browsers, unlike padding against the native arrow. */
 .select {
   padding: var(--space-8) calc(var(--space-40) + var(--space-8)) var(--space-8) var(--space-16);
-  border: 1px solid var(--color-light-gray);
+  border: var(--border-width) solid var(--color-light-gray);
   border-radius: var(--radius-8);
   background-color: inherit;
   appearance: none;
@@ -587,7 +590,7 @@ hr {
    ========================================================================== */
 
 .border-thin { border: 1px solid var(--color-border); }
-.border { border: 2px solid var(--color-border); }
+.border { border: var(--border-width) solid var(--color-border); }
 .border-thick { border: 4px solid var(--color-border); }
 .border-0 { border: none; }
 
