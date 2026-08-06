@@ -210,6 +210,25 @@ hr {
 
 .bg-body { background-color: var(--color-bg); }
 
+/* Components
+   ========================================================================== */
+
+/* Placed before the utility sections below (equal-specificity, single-
+   class selectors) so bg-, border-, and p- utilities can override
+   these defaults by source order alone. */
+.btn {
+  padding: var(--space-8);
+  border: 1px solid var(--color-light-gray);
+  transition: filter var(--fade-speed) ease;
+}
+
+/* brightness() darkens whatever bg- or border- color is composed in,
+   without needing to know which specific color that is. */
+.btn-filled:hover,
+.btn-unfilled:hover {
+  filter: brightness(0.92);
+}
+
 /* Layout
    ========================================================================== */
 

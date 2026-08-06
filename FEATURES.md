@@ -77,3 +77,12 @@ auto-derived light/dark variants (each shade, where present, is its own named co
 
 - `.pointer-events-none`.
 - Cursor: `.cursor-{auto,default,pointer,text,move,grab,grabbing,wait,help,not-allowed,crosshair,zoom-in,zoom-out,none}`.
+
+## Components
+
+- `.btn` — `--space-8` padding, 1px light-gray border. Declared before the utility sections so
+  `.bg-*`/`.border-*`/`.p-*` etc. can still override it by source order.
+- `.btn-filled`, `.btn-unfilled` — on hover, darkens whatever `.bg-*`/`.border-*` color is
+  composed in via `filter: brightness(0.92)`, since that works regardless of which specific
+  color utility is applied. Compose like `.btn .btn-filled .bg-blue` or
+  `.btn .btn-unfilled .border-blue`. A work in progress; more input/button styling is planned.
