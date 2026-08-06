@@ -611,3 +611,18 @@ hr {
 .cursor-zoom-in { cursor: zoom-in; }
 .cursor-zoom-out { cursor: zoom-out; }
 .cursor-none { cursor: none; }
+
+/* Component states
+   ========================================================================== */
+
+/* Unlike .btn above, this is placed after the utility sections so it
+   overrides whatever bg-, border-, or text- color is composed in.
+   pointer-events: none also keeps :hover from ever matching, so the
+   btn-filled/btn-unfilled hover rules never apply here. */
+.btn-disabled {
+  background-color: var(--color-light-gray);
+  border-color: var(--color-light-gray);
+  color: var(--color-dark-gray);
+  cursor: not-allowed;
+  pointer-events: none;
+}
