@@ -264,7 +264,7 @@ hr {
    drawn instead — this also makes the spacing around it consistent
    across browsers, unlike padding against the native arrow. */
 .select {
-  padding: var(--space-8) var(--space-40) var(--space-8) var(--space-16);
+  padding: var(--space-8) calc(var(--space-40) + var(--space-8)) var(--space-8) var(--space-16);
   border: 1px solid var(--color-light-gray);
   border-radius: var(--radius-8);
   background-color: inherit;
