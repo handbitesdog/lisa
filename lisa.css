@@ -191,10 +191,13 @@ textarea {
 }
 
 /* Native indicator stays; just theme its checked-state color instead
-   of leaving it browser blue. */
+   of leaving it browser blue, and match its unchecked box to the
+   surrounding background/border instead of the browser default. */
 input[type="checkbox"],
 input[type="radio"] {
   accent-color: var(--color-blue);
+  background-color: inherit;
+  border: var(--border-width) solid var(--color-border);
 }
 
 table {
@@ -246,7 +249,7 @@ hr {
 .btn-filled::before {
   content: "";
   position: absolute;
-  inset: -1px;
+  inset: calc(-1 * var(--border-width));
   z-index: -1;
   background-color: inherit;
   border-radius: inherit;
