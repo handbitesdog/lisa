@@ -24,17 +24,19 @@
   --space-80: 80px;
 
   /* layout */
-  --container-max: 1200px;
+  --wide-container-max: 1200px;
+  --container-max: 840px;
 
   /* color */
   --color-black: #1a1a1a;
   --color-dark-gray: #6e6a64;
+  --color-gray: #a8a49d;
   --color-white: #faf9f6;
   --color-light-gray: #e2ded6;
   --color-blue: #3457d5;
   --color-green: #2f8f4e;
   --color-red: #c1443a;
-  --color-yellow: #b8862b;
+  --color-yellow: #f6e24a;
   --color-purple: #7952b3;
   --color-orange: #c1622f;
 
@@ -198,6 +200,16 @@ hr {
   width: 100%;
   max-width: var(--container-max);
   margin-inline: auto;
+  padding-left: var(--space-32);
+  padding-right: var(--space-32);
+}
+
+.wide-container {
+  width: 100%;
+  max-width: var(--wide-container-max);
+  margin-inline: auto;
+  padding-left: var(--space-32);
+  padding-right: var(--space-32);
 }
 
 /* Custom properties can't be read inside a media feature, so this breakpoint
@@ -378,10 +390,10 @@ hr {
 .text-2xl { font-size: var(--font-size-2xl); }
 .text-3xl { font-size: var(--font-size-3xl); }
 
-.font-normal { font-weight: 400; }
-.font-medium { font-weight: 500; }
-.font-semibold { font-weight: 600; }
-.font-bold { font-weight: 700; }
+.text-normal { font-weight: 400; }
+.text-medium { font-weight: 500; }
+.text-semibold { font-weight: 600; }
+.text-bold { font-weight: 700; }
 
 .leading-tight { line-height: var(--leading-tight); }
 .leading-normal { line-height: var(--leading-normal); }
@@ -393,6 +405,7 @@ hr {
 
 .text-black { color: var(--color-black); }
 .text-dark-gray { color: var(--color-dark-gray); }
+.text-gray { color: var(--color-gray); }
 .text-white { color: var(--color-white); }
 .text-light-gray { color: var(--color-light-gray); }
 .text-blue { color: var(--color-blue); }
@@ -407,6 +420,7 @@ hr {
 
 .bg-black { background-color: var(--color-black); }
 .bg-dark-gray { background-color: var(--color-dark-gray); }
+.bg-gray { background-color: var(--color-gray); }
 .bg-white { background-color: var(--color-white); }
 .bg-light-gray { background-color: var(--color-light-gray); }
 .bg-blue { background-color: var(--color-blue); }
@@ -443,6 +457,7 @@ hr {
 
 .border-black { border-color: var(--color-black); }
 .border-dark-gray { border-color: var(--color-dark-gray); }
+.border-gray { border-color: var(--color-gray); }
 .border-blue { border-color: var(--color-blue); }
 .border-green { border-color: var(--color-green); }
 .border-red { border-color: var(--color-red); }

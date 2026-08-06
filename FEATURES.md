@@ -24,7 +24,8 @@ Override CSS custom properties on `:root` to theme the page:
 
 ## Layout
 
-- `.container` — centered, `max-width: 1200px`, gains `--space-32` side padding below that width.
+- `.container` — centered, `max-width: 840px`, with `--space-32` side padding.
+- `.wide-container` — centered, `max-width: 1200px`, with `--space-32` side padding.
 - Display: `.block`, `.inline-block`, `.inline`, `.flex`, `.inline-flex`, `.grid`, `.inline-grid`, `.hidden`.
 - Flex: `.flex-row`, `.flex-col`, `.flex-wrap`, `.flex-nowrap`, `.flex-1`, `.flex-auto`, `.flex-none`, `.grow`, `.shrink-0`.
 - Grid: `.grid-cols-{1,2,3,4,6}`, `.col-span-full`.
@@ -43,21 +44,21 @@ All support `0` and the five scale values (e.g. `.p-0` … `.p-80`).
 ## Typography
 
 - Size: `.text-xs` … `.text-3xl` (12–48px).
-- Weight: `.font-normal`, `.font-medium`, `.font-semibold`, `.font-bold`.
+- Weight: `.text-normal`, `.text-medium`, `.text-semibold`, `.text-bold`.
 - Line height: `.leading-tight`, `.leading-normal`, `.leading-loose`.
 - Align: `.text-left`, `.text-center`, `.text-right`.
-- Color: `.text-{black,dark-gray,white,light-gray,blue,green,red,yellow,purple,orange}`.
+- Color: `.text-{black,dark-gray,gray,white,light-gray,blue,green,red,yellow,purple,orange}`.
 
 ## Color
 
-Palette: black, dark-gray, white, light-gray, blue, green, red, yellow, purple, orange.
+Palette: black, dark-gray, gray, white, light-gray, blue, green, red, yellow, purple, orange.
 
-- Background: `.bg-{color}` for all ten.
+- Background: `.bg-{color}` for all eleven.
 - Light/dark variants (auto-derived via `color-mix`) for blue, green, red, yellow, purple, orange: `.bg-{color}-light`, `.bg-{color}-dark`.
 
 ## Borders
 
 - `.border`, `.border-2`, `.border-0`.
 - Sides: `.border-t`, `.border-r`, `.border-b`, `.border-l`.
-- Color: `.border-{black,dark-gray,blue,green,red,yellow,purple,orange}`.
+- Color: `.border-{black,dark-gray,gray,blue,green,red,yellow,purple,orange}`.
 - Radius: `.rounded-4`, `.rounded-8`, `.rounded-16`, `.rounded-full`.

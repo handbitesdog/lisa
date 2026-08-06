@@ -21,7 +21,7 @@ The following spacing units are used:
 
 # Workflow
 
-- Always update FEATURES.md 
+- Update FEATURES.md if needed.
 
 # Git conventions
 
