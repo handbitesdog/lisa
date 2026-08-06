@@ -13,7 +13,8 @@ A single-file normalizer + utility class system.
 - Links use `--color-link`, fade to `--color-link-dark` on hover.
 - Form controls inherit font/color; buttons are reset (no background/border/padding, `cursor: pointer`).
 - Text inputs and `textarea` have native appearance/border-radius removed (checkbox and radio
-  are left native since they'd otherwise lose their indicator).
+  are left native since they'd otherwise lose their indicator, but get `accent-color:
+  var(--color-blue)` so their checked state matches the theme instead of browser default blue).
 - `textarea` resizes vertically only.
 - Tables collapse borders; `hr` uses `--color-border`.
 
@@ -98,9 +99,9 @@ auto-derived light/dark variants (each shade, where present, is its own named co
   stays white. Declared after the utility sections — the opposite placement from `.btn` — so
   it overrides whatever color is composed in.
 - `.input` — same `--space-8`/`--space-16` padding, `--radius-8` corners, and 1px light-gray
-  border as `.btn`, for text-like inputs. Declared alongside `.btn` (before the utility
-  sections) so it can be overridden the same way. `background-color: inherit` so it takes on
-  whatever background the parent has instead of a fixed color.
+  border as `.btn`, for text-like inputs and `textarea`. Declared alongside `.btn` (before the
+  utility sections) so it can be overridden the same way. `background-color: inherit` so it
+  takes on whatever background the parent has instead of a fixed color.
 - `.select` — same padding/border/radius as `.input`, and also inherits its background. Unlike
   `.input`, the native arrow is dropped (`appearance: none`) in favor of a Lucide
   `chevron-down` icon inlined as a data-URI background-image (`stroke` is a literal
